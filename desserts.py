@@ -54,6 +54,15 @@ class Cupcake:
         return
       else:
         return cls.cache[name]
+
+
+class Brownie(Cupcake):
+
+  def __init__(self, name, price):
+    super().__init__(name, 'chocolate', price)
+    self.qty = 0
+
+
     
 
 
@@ -68,3 +77,11 @@ if __name__ == '__main__':
     doctest.master.summarize(1)
     if result.failed == 0:
         print('ALL TESTS PASSED')
+
+
+
+
+
+
+
+
