@@ -33,6 +33,8 @@ class Cupcake:
         qty.self = 0
         return
 
+      self.qty -= amount
+
     @staticmethod
     def scale_recipe(ingredients, amount):
 
