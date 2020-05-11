@@ -30,7 +30,6 @@ class Cupcake:
         return
 
       if self.qty < amount:
-        print("Sorry, we don't have enough cupcakes. Here the rest of them")
         self.qty = 0
         return
 
