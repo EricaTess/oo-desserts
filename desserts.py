@@ -28,9 +28,10 @@ class Cupcake:
       if self.qty == 0:
         print("Sorry, these cupcakes are sold out")
         return
+
       if self.qty < amount:
-        print("Sorry, we don't have enough cupcakes")
-        qty.self = 0
+        print("Sorry, we don't have enough cupcakes. Here the rest of them")
+        self.qty = 0
         return
 
       self.qty -= amount
