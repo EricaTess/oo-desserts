@@ -42,7 +42,7 @@ class Cupcake:
 
       for ingredient in ingredients:
         new_amount = ingredient[1] * amount
-        updated_ingredients.append((ingredient, new_amount))
+        updated_ingredients.append((ingredient[0], new_amount))
 
       return updated_ingredients
 
